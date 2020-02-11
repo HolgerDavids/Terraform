@@ -12,7 +12,8 @@ resource "docker_container" "nginx-server" {
   }
   volumes {
     container_path  = "/usr/share/nginx/html"
-    host_path = "/home/scrapbook/tutorial/www"
+    host_path = "/home/docker/"
+
     read_only = true
   }
 }
